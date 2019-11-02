@@ -10,7 +10,7 @@ import Request from "../utils/Request";
 
 function* SearchHotKey() {
     try {
-        const res = yield call(Request.get, 'https://go.tomatohut.cn/api/Haodanku/hot_key/');
+        const res = yield call(Request.get, '/Haodanku/hot_key/');
         yield put(SearchActions.SearchHotKeyRequestEnd(res.data));
     } catch (error) {
 

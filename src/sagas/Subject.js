@@ -14,7 +14,7 @@ function* Subject({
                     }) {
     let toast = Toast.loading('加载中...', 0);
     try {
-        const res = yield call(Request.get, `https://go.tomatohut.cn/api/Haodanku/get_subject_item/id/${id}/`);
+        const res = yield call(Request.get, `/Haodanku/get_subject_item/id/${id}/`);
         yield put(SubjectActions.SubjectRequestEnd(res.data));
     } catch (error) {
         yield put(SubjectActions.SubjectRequestError());

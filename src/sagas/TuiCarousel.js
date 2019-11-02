@@ -6,17 +6,20 @@
 import React from 'react';
 import {put, call, takeLatest} from 'redux-saga/effects';
 import * as TuiActions from '../actions/tui';
-import Request from "../utils/Request";
+import Request from '../utils/Request';
 
 function* TuiCarousel() {
-    try {
-        const res = yield call(Request.get, 'https://go.tomatohut.cn/api/Haodanku/get_subject/');
-        yield put(TuiActions.TuiCarouselRequestEnd(res.data))
-    } catch (error) {
-        console.log(error)
-    }
+  try {
+    const res = yield call(
+      Request.get,
+      '/Haodanku/get_subject/',
+    );
+    yield put(TuiActions.TuiCarouselRequestEnd(res.data));
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export default function* WatchTuiCarousel() {
-    yield takeLatest('TuiCarouselRequest', TuiCarousel);
+  yield takeLatest('TuiCarouselRequest', TuiCarousel);
 }

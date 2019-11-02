@@ -10,7 +10,7 @@ import Request from "../utils/Request";
 
 function* TuiSales() {
     try {
-        const res = yield call(Request.get, 'https://go.tomatohut.cn/api/Haodanku/sales_list/sale_type/1/back/20/');
+        const res = yield call(Request.get, '/Haodanku/sales_list/sale_type/1/back/20/');
         yield put(TuiActions.TuiSalesRequestEnd(res.data))
     } catch (error) {
         console.log(error)

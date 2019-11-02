@@ -5,9 +5,16 @@
 <a href="https://github.com/MX8CLUB/TomatoHut/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/MX8CLUB/TomatoHut.svg"></a>
 <a href="https://github.com/MX8CLUB/TomatoHut/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/MX8CLUB/TomatoHut/total.svg?color=yellow"></a>
 
-番茄小屋React Native客户端V1.1.8
+番茄小屋React Native客户端V1.1.9
 
 还有许多地方待完善，可自行完善，接入了腾讯Bugly，与React-Native中文网react-native-update热更新平台，使用请修改相关文件
+
+## Update 2019/11/2
+React-Native版本升级至0.60.5
+修改部分内容
+不更了，软著下来了，准备重构上线了，这版、、大家看到的参考一下就好了，太菜了，看不下去，所以准备重新写了，全放出来了（小声逼逼，有谁公司招人吗，找工作ing。o(*^▽^*)┛）
+
+有什么问题可以加我QQ：1341424370 备注Github
 
 ## 目录
 
@@ -25,18 +32,37 @@
 
 ## 项目依赖
 本项目采用第三方组件如下
-- "@ant-design/react-native": "^3.1.12" 
-- "react-native-alibaichuan": "github:MX8CLUB/react-native-alibaichuan",
+- "@ant-design/react-native": "^3.2.0",
+- "@react-native-community/async-storage": "^1.6.2",
+- "@react-native-community/masked-view": "^0.1.0",
+- "@react-native-community/viewpager": "^1.1.7",
+- "axios": "^0.19.0",
+- "hermes-engine": "^0.2.1",
+- "lottie-ios": "^3.0.3",
+- "lottie-react-native": "^3.2.1",
+- "node-forge": "^0.9.1",
+- "react": "16.8.6",
+- "react-native": "0.60.5",
+- "react-native-alibaichuan": "https://git.dev.tencent.com/focstu/react-native-alibaichuan.git",
 - "react-native-bugly": "github:walkOnly/react-native-bugly",
-- "react-native-gesture-handler": "^1.3.0",
-- "react-native-smartrefreshlayout": "^0.6.7",
+- "react-native-device-info": "^3.1.4",
+- "react-native-elements": "^1.2.4",
+- "react-native-exit-app": "^1.1.0",
+- "react-native-gesture-handler": "^1.4.1",
+- "react-native-imei": "^0.2.0",
+- "react-native-reanimated": "^1.3.0",
+- "react-native-screens": "^1.0.0-alpha.23",
 - "react-native-splash-screen": "^3.2.0",
-- "react-native-update": "^5.1.8",
-- "react-navigation": "^3.11.0",
-- "react-redux": "^7.1.0",
-- "redux": "^4.0.1",
-- "redux-saga": "^1.0.5",
-- "rn-fetch-blob": "^0.10.15"
+- "react-native-storage": "^1.0.1",
+- "react-native-update": "^5.3.0",
+- "react-native-vector-icons": "^6.6.0",
+- "react-native-webview": "^7.4.1",
+- "react-navigation": "^4.0.10",
+- "react-navigation-stack": "^2.0.0-alpha.19",
+- "react-navigation-tabs": "^2.5.5",
+- "react-redux": "^7.1.1",
+- "redux": "^4.0.4",
+- "redux-saga": "^1.1.1"
 
 ## 安装
 
@@ -54,7 +80,7 @@ yarn
 react-native run-android
 ```
 
-## 相关截图
+## 相关截图(更新后部分内容不一致，以运行结果为准)
 
 ### 首页
 

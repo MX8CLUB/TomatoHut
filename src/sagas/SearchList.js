@@ -17,7 +17,7 @@ function* SearchListRequest({
     let toast = null;
     if(page === 1) toast = Toast.loading('加载中...', 0);
     try {
-        const res = yield call(Request.post, 'https://go.tomatohut.cn/api/Haodanku/get_keyword_items/', {
+        const res = yield call(Request.post, '/Haodanku/get_keyword_items/', {
             params: `/keyword/${keyword}/back/20/min_id/${page}/sort/${sort}/`
         });
         console.log(res);

@@ -8,22 +8,17 @@ import {View} from 'react-native';
 import {call, put, takeLatest} from 'redux-saga/effects';
 import * as ClassifyListActions from '../actions/classifyList';
 import Request from '../utils/Request';
-import {Portal, Toast} from "@ant-design/react-native";
+import {Portal, Toast} from '@ant-design/react-native';
 
-export default class Brand extends Component{
-    constructor(props) {
-        super(props);
-        Request.get('https://go.tomatohut.cn/api/Haodanku/brand')
-            .then(res => {
-                console.log(res);
-            })
-    }
+export default class Brand extends Component {
+  constructor(props) {
+    super(props);
+    Request.get('/Haodanku/brand').then(res => {
+      console.log(res);
+    });
+  }
 
-    render() {
-        return (
-            <View>
-
-            </View>
-        );
-    }
+  render() {
+    return <View />;
+  }
 }
